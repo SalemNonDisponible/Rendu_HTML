@@ -1,4 +1,8 @@
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -9,7 +13,48 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: linear-gradient(rgba(255,200,42,1) 28.3%, white);
 }
+
+h2 {
+    text-decoration: underline;
+}
+
+
+/* Je m'amuse avec les couleurs */
+
+section {
+    padding: 0 20px;
+}
+
+main h2 {
+    padding-top: 30px;
+    margin-top: 0;
+}
+
+main p, main ul, main ol {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
+.section_1 {
+    background: linear-gradient(white, #CA2084);
+}
+
+.section_2 {
+    background: linear-gradient(#CA2084, #02EAE9);
+}
+
+.section_3 {
+    background: linear-gradient(#02EAE9, #42F92F);
+}
+
+.section_4 {
+    background: linear-gradient(#42F92F, white);
+}
+
+/* J'ai fini de m'amuser */
+
 
 figure {
     display: flex;
@@ -24,7 +69,7 @@ figcaption {
 }
 
 .nav_accueil {
-    margin-right: 100px;
+    margin-right: 175px;
     width: 20%;
     display: flex;
     justify-content: space-between;
@@ -59,6 +104,7 @@ a:hover {
     color: black;
 }
 
+
 /* Test pour un menu déroulant avec details */
 
 details ul {
@@ -68,6 +114,12 @@ details ul {
 details ul li {
     width: 200px;
 }
+
+summary {
+    list-style: none;
+}
+
+
 /* Test pour un menu déroulant avec div */
 
 .submenu {
