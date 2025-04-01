@@ -1,0 +1,88 @@
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+}
+
+.nav_accueil {
+    margin-right: 100px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+td, th {
+    border: solid black 3px;
+    margin: 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+.instagram {
+    background: linear-gradient(to right, #F58529, #DD2A7B, #8134AF, #515BD4);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.instagram:hover {
+    color: black;
+}
+
+/* Test pour un menu déroulant avec details */
+
+details ul {
+    list-style-type: none;
+}
+
+details ul li {
+    width: 200px;
+}
+/* Test pour un menu déroulant avec div */
+
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+.submenu ul {
+    list-style-type: none;
+}
+
+.menu:hover {
+    color: red;
+}
+
+.menu:hover .submenu {
+    display: block;
+}
