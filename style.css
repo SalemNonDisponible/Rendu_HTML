@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
 
+body {
+    margin: 0;
+    padding: 0;
+}
 
 html {
     scroll-behavior: smooth;
@@ -9,6 +13,48 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px 0;
+    border-top: 1px solid black;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.redirection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redirection ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.redirection li {
+    padding-left: 20px;
+}
+
+.redirection img {
+    width: 40px;
+    border-radius: 10px;
+}
+
+.lien-reseau, .lien-politique {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.lien-reseau p {
+    font-weight: bold;
+    color: linear-gradient(to left, black, white);
 }
 
 nav {
@@ -91,6 +137,10 @@ figcaption {
     margin: 0;
 }
 
+.nav_voyager a:hover {
+    text-shadow: 0px 1px 2px;
+}
+
 .titre_liste {
     font-weight: bold;
     font-size: large;
@@ -115,54 +165,9 @@ a {
 a:hover {
     color: red;
     font-weight: bold;
+    
 }
 
-.image_accueil:hover {
+.image_accueil:hover, .lien-politique a:hover {
     font-weight: normal;
-}
-
-.instagram {
-    background: linear-gradient(to right, #F58529, #DD2A7B, #8134AF, #515BD4);
-    border-radius: 5px;
-    padding: 5px;
-    color: white;
-}
-
-.instagram:hover {
-    color: black;
-}
-
-
-/* Test pour un menu déroulant avec details */
-
-details ul {
-    list-style-type: none;
-}
-
-details ul li {
-    width: 200px;
-}
-
-summary {
-    list-style: none;
-}
-
-
-/* Test pour un menu déroulant avec div */
-
-.submenu {
-    display: none;
-    position: absolute;
-}
-
-.submenu ul {
-    list-style-type: none;
-}
-
-.menu:hover {
-    color: red;
-}
-
-.menu:hover .submenu {
-    display: block;
 }
