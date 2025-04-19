@@ -3,30 +3,66 @@
     padding: 0;
 }
 
-header {
-    height: 150px;
-    background-color: orangered;
+header, footer {
     display: flex;  
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a {
+    font-size: 1.5em;
+}
+
+footer a:hover {
+    color: white;
+    font-weight: bold;
 }
 
 .selection {
     width: 100%;
-    padding-top: 10px ;
+    background-color: orangered;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+footer .selection {
+    justify-content: center;
+}
+
 #barre-de-recherche {
     display: flex;
+    padding: 10px 0;
 }
 
-header a, header img {
-    height: 150px;
+.filtre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
 }
 
-input[type="search"], input[type="button"] {
-    width: 250px;
+.filtre p {
+    text-align: center;
+    width: 30%;
+}
+
+#liste-filtre {
+    width: 100%;
+    padding-right: 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#liste-filtre div {
+    padding: 0 30px 10px 30px;
+}
+
+input[type="search"], button {
     padding: 10px;
     text-align: center;
     border: none;
@@ -35,19 +71,20 @@ input[type="search"], input[type="button"] {
 
 input[type="search"] {
     border-radius: 30px 0 0 30px;
+    width: 300px;
+    height: 40px;
 }
 
-input[type="button"] {
+button {
     border-radius: 0 30px 30px 0;
+}
+
+button i {
+    font-size: 1.3em;
 }
 
 input[type="search"]:focus  {
     outline: none;
-}
-
-footer {
-    height: 150px;
-    background-color: orangered;
 }
 
 main {
@@ -57,6 +94,7 @@ main {
 .card {
     width: 350px;
     margin-bottom: 30px;
+    box-shadow: 2px 2px 2px;
     height: auto;
     background-color: #b4d7f7;
     border: 1px solid black;
@@ -76,7 +114,7 @@ main {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 30px 30px 0 0;
 }
 
 .anime-card {
